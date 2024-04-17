@@ -454,7 +454,7 @@ def zoom_view(request):
         </p>
 
       </div>
-
+ # <p>GestureVerse project</>
     </div>
   </footer>
     </body>

@@ -75,7 +75,7 @@ def main():
     clear_button_size = (100, 40)
     clear_button_pos = (590, 0)
 
-    # Define save button parameters
+    # Save button parameters
     save_button_size = (100, 40)
     save_button_pos = (700, 0)
 
@@ -181,7 +181,7 @@ def main():
                     cv2.FONT_HERSHEY_SIMPLEX, 1,
                     (0, 0, 0), 2)
 
-        # Display save button
+        # Save button
         cv2.rectangle(blackboard_copy, save_button_pos, (save_button_pos[0] + save_button_size[0],
                                                          save_button_pos[1] + save_button_size[1]), (255, 255, 255), -1)
         cv2.putText(blackboard_copy, "Save", (save_button_pos[0] + 10, save_button_pos[1] + 30),

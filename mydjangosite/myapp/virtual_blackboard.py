@@ -1,4 +1,4 @@
-import mediapipe as mp
+dimport mediapipe as mp
 import cv2
 import numpy as np
 import time
@@ -52,7 +52,7 @@ def main():
         else:
             target_color = (255, 255, 255)  # White
 
-        # Smooth transition using interpolation
+        # Smooth transition using interpolation method
         selected_color = tuple(int(a * 0.8 + b * 0.2) for a, b in zip(selected_color, target_color))
 
     # Initialize hands module
@@ -81,8 +81,8 @@ def main():
 
     # Initialize the webcam
     cap = cv2.VideoCapture(0)
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)  # Set the width of the webcam feed
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)  # Set the height of the webcam feed
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)  # width of the webcam feed
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)  # height of the webcam feed
 
     # Load tools frame
     tools = cv2.imread(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'media', 'pic1.jpg'))

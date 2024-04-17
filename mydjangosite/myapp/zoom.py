@@ -34,7 +34,7 @@ while True:
         length, info, img = detector.findDistance(hands[0]["center"], hands[1]["center"], img)
         scale = int((length - startDist) // 2)
         cx, cy = info[4:]
-        # print(scale)
+        
 
     else:
         startDist = 0

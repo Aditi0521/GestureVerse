@@ -4,4 +4,4 @@ services:
     env: python
     buildCommand: "pip install -r mypythonproject/mydjangosite/requirements.txt"
     startCommand: "daphne -b 0.0.0.0 -p 8000 mydjangosite.asgi:application"
-    pythonVersion: 3.9
+    pythonVersion: python-3.10.9
